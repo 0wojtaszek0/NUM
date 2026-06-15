@@ -1,0 +1,122 @@
+{
+ "n_train_raw": 1460,
+ "n_test": 1459,
+ "n_num": 36,
+ "n_cat": 43,
+ "skew_raw": 1.8828757597682129,
+ "price_mean": 180921.19589041095,
+ "miss_before": 7829,
+ "miss_after": 260,
+ "n_outliers": 15,
+ "n_train_clean": 1445,
+ "n_sel_num": 21,
+ "n_sel_cat": 10,
+ "ranking": [
+  {
+   "Model": "Gradient Boosting",
+   "R2": 0.8386,
+   "RMSE": 30021.8031,
+   "MAE": 19445.3779,
+   "MAPE": 0.1126,
+   "CV": 0.1538
+  },
+  {
+   "Model": "XGBoost",
+   "R2": 0.8385,
+   "RMSE": 30027.4392,
+   "MAE": 19517.107,
+   "MAPE": 0.1132,
+   "CV": 0.1545
+  },
+  {
+   "Model": "Extra Trees",
+   "R2": 0.7895,
+   "RMSE": 34282.1737,
+   "MAE": 20426.7587,
+   "MAPE": 0.1181,
+   "CV": 0.1671
+  },
+  {
+   "Model": "Random Forest",
+   "R2": 0.7805,
+   "RMSE": 35010.1838,
+   "MAE": 20953.1979,
+   "MAPE": 0.1206,
+   "CV": 0.1685
+  },
+  {
+   "Model": "Linear Regression",
+   "R2": 0.7008,
+   "RMSE": 40878.7947,
+   "MAE": 24445.2593,
+   "MAPE": 0.1412,
+   "CV": 0.166
+  },
+  {
+   "Model": "Ridge Regression",
+   "R2": 0.6974,
+   "RMSE": 41105.5382,
+   "MAE": 24592.6598,
+   "MAPE": 0.1418,
+   "CV": 0.166
+  },
+  {
+   "Model": "Lasso Regression",
+   "R2": 0.69,
+   "RMSE": 41604.3769,
+   "MAE": 24671.4388,
+   "MAPE": 0.1422,
+   "CV": 0.166
+  },
+  {
+   "Model": "K-Nearest Neighbors",
+   "R2": 0.675,
+   "RMSE": 42602.9759,
+   "MAE": 26934.1848,
+   "MAPE": 0.1531,
+   "CV": 0.192
+  }
+ ],
+ "pca_dims": 25,
+ "n_feat_tree": 78,
+ "best": "Gradient Boosting",
+ "mae_val": 19445.3778740695,
+ "resid_bias": 2839.493208426342,
+ "mape_med": 8.577561295127023,
+ "shap_top": [
+  [
+   "HouseAge",
+   0.1197
+  ],
+  [
+   "Fireplaces",
+   0.0703
+  ],
+  [
+   "2ndFlrSF",
+   0.059
+  ],
+  [
+   "BsmtFinSF1",
+   0.0527
+  ],
+  [
+   "RemodAge",
+   0.0494
+  ],
+  [
+   "LotArea",
+   0.0467
+  ],
+  [
+   "BsmtUnfSF",
+   0.0324
+  ],
+  [
+   "TotalOutdoorSF",
+   0.0296
+  ]
+ ],
+ "test_mean": 175484.90329466024,
+ "test_median": 159185.42370369122
+}
